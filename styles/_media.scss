@@ -42,9 +42,9 @@
 
     //about-section
     .about-section{
-        margin: 2.5rem;
+        margin: 0;
         padding-bottom:3rem;
-        height: 100vh;
+        height: auto;
         .about-container{
             
             grid-template-columns: 1fr;
@@ -58,6 +58,11 @@
                     
                 } 
             }
+            .about-img-wrap{
+                width: 100%;
+                height: auto;
+                
+                }
         }
         
     }
@@ -65,12 +70,15 @@
     .donation-section{
         margin: 2rem;
         padding-bottom: 3rem;
-        height: 100vh;
+        height: auto;
+        .about-donation{
+            grid-template-columns: 1fr;
+            .donation-img-wrap{
+                height: auto;
+            }
+        }
     }
-    .about-donation{
-        grid-template-columns: 1fr !important;
-        
-    }
+    
     .join-us-sec-con{
         display: flex;
         flex-direction: column;
