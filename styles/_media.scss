@@ -68,7 +68,7 @@
     }
     //donation-section
     .donation-section{
-        margin: 2rem;
+        margin: 1rem;
         padding-bottom: 3rem;
         height: auto;
         .about-donation{
@@ -95,8 +95,98 @@
 
     
     .hero-section{
-        margin: .4rem;
+        margin: 0;
         padding: 0 20px;
         background-position: top 55%;
+        height: 80vh;
     }
+    //about-section
+    .about-section{
+        margin: 0;
+        padding-bottom:1rem;
+        height: auto;
+        .about-container{
+            margin: 0;
+            grid-template-columns: 1fr;
+            h4{
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                font-size: 2rem;
+                padding: 1rem;
+                &::after{
+                    content: '';
+                    margin-left: 4rem;
+                    
+                    
+                } 
+            }
+            .about-img-wrap{
+                width: 100%;
+                height: auto;
+                
+                }
+        }
+        
+    }
+    //donation-section
+    .donation-section{
+        margin: 0;
+        padding-bottom: 3rem;
+        height: auto;
+        .about-donation{
+            grid-template-columns: 1fr;
+            .donation-text-wrap{
+                h4{
+                    padding: 1rem;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    &::after{
+                        content: '';
+                        margin-left: 8rem;
+                        display: block;
+                        width: 30%;
+                        height: .4rem;
+                        background-color: var(--color-secondary);
+                    } 
+                }
+            }
+            .donation-img-wrap{
+                height: auto;
+            }
+        }
+    }
+    //join-us-section
+.join-us-sec{
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    .heading{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        color: var(--color-grey3);
+        font-size: 2rem;
+        font-weight: 700;
+        &::after{
+            content: '';
+            width: 10%;
+            height: .4rem;
+            display: block;
+            background-color: var(--color-secondary);
+        }
+    }
+    .join-us-sec-con{
+        display: flex;
+        padding-top: 3.5rem;
+        margin: 0;
+        
+        .right-contact{
+            flex: 3;
+            margin: 0;
+        }
+    }
+}
 }

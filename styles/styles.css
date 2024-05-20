@@ -24,6 +24,11 @@ a {
   font-family: inherit;
 }
 
+p {
+  color: var(--color-primary);
+  font-weight: 400;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
@@ -33,9 +38,13 @@ body {
 
 section {
   background-color: #f2f2f2;
-  margin-bottom: 20px;
+  margin-bottom: 0;
   padding: 20px;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 nav,
@@ -260,7 +269,7 @@ nav .nav-icons {
 .donation-section {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 4rem;
+  margin: 1rem;
 }
 .donation-section .about-donation {
   display: grid;
@@ -272,7 +281,7 @@ nav .nav-icons {
   color: var(--color-grey3);
 }
 .donation-section .about-donation .donation-text-wrap h4 {
-  padding: 4rem;
+  padding: 2rem;
   font-size: 3rem;
   font-weight: 700;
 }
@@ -556,7 +565,7 @@ nav .nav-icons {
     height: auto;
   }
   .donation-section {
-    margin: 2rem;
+    margin: 1rem;
     padding-bottom: 3rem;
     height: auto;
   }
@@ -576,8 +585,87 @@ nav .nav-icons {
     padding: 1rem 2rem;
   }
   .hero-section {
-    margin: 0.4rem;
+    margin: 0;
     padding: 0 20px;
     background-position: top 55%;
+    height: 80vh;
+  }
+  .about-section {
+    margin: 0;
+    padding-bottom: 1rem;
+    height: auto;
+  }
+  .about-section .about-container {
+    margin: 0;
+    grid-template-columns: 1fr;
+  }
+  .about-section .about-container h4 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .about-section .about-container h4::after {
+    content: "";
+    margin-left: 4rem;
+  }
+  .about-section .about-container .about-img-wrap {
+    width: 100%;
+    height: auto;
+  }
+  .donation-section {
+    margin: 0;
+    padding-bottom: 3rem;
+    height: auto;
+  }
+  .donation-section .about-donation {
+    grid-template-columns: 1fr;
+  }
+  .donation-section .about-donation .donation-text-wrap h4 {
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .donation-section .about-donation .donation-text-wrap h4::after {
+    content: "";
+    margin-left: 8rem;
+    display: block;
+    width: 30%;
+    height: 0.4rem;
+    background-color: var(--color-secondary);
+  }
+  .donation-section .about-donation .donation-img-wrap {
+    height: auto;
+  }
+  .join-us-sec {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .join-us-sec .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-grey3);
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .join-us-sec .heading::after {
+    content: "";
+    width: 10%;
+    height: 0.4rem;
+    display: block;
+    background-color: var(--color-secondary);
+  }
+  .join-us-sec .join-us-sec-con {
+    display: flex;
+    padding-top: 3.5rem;
+    margin: 0;
+  }
+  .join-us-sec .join-us-sec-con .right-contact {
+    flex: 3;
+    margin: 0;
   }
 }/*# sourceMappingURL=styles.css.map */
